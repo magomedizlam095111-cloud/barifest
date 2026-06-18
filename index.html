@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барифест 2026 — Главное кофейное соревнование года</title>
+    <meta name="description" content="Барифест 2026 — чемпионат среди кофеен и бариста. Соревнования, мастер-классы, дегустации и нетворкинг. Станьте частью главного кофейного события!">
+    <meta name="keywords" content="барифест, фестиваль кофе, конкурс бариста, кофе 2026, чемпионат бариста, эспрессо, капучино">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Барифест 2026 — Главное кофейное соревнование">
+    <meta property="og:description" content="Лучшие мастера кофейного искусства соберутся в одном месте. Присоединяйтесь к нам!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1497935586351-b13be390b1df?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barifest2026.ru">
+
+    <!-- Favicon (заглушка) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Microdata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Барифест 2026",
+      "startDate": "2026-09-15T10:00",
+      "endDate": "2026-09-15T20:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Конгресс-холл Москва",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Кофейная, 1",
+          "addressLocality": "Москва",
+          "postalCode": "101000",
+          "addressCountry": "RU"
+        }
+      },
+      "image": [
+        "https://images.unsplash.com/photo-1497935586351-b13be390b1df?auto=format&fit=crop&w=1200&q=80"
+       ],
+      "description": "Чемпионат среди кофеен и их бариста. Соревнования, дегустации и призы.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://barifest2026.ru/#tickets",
+        "price": "1500",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-01-01T00:00"
+      },
+      "performer": {
+        "@type": "PerformingGroup",
+        "name": "Лучшие бариста страны"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Бари<span>фест</span></a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О фестивале</a></li>
+                    <li><a href="#program" class="nav__link">Программа</a></li>
+                    <li><a href="#nominations" class="nav__link">Номинации</a></li>
+                    <li><a href="#gallery" class="nav__link">Галерея</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#tickets" class="btn btn--small">Купить билет</a>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content fade-in-up">
+                    <h1 class="hero__title">Барифест 2026</h1>
+                    <p class="hero__subtitle">«Главное кофейное соревнование среди кофеен и бариста»</p>
+                    <p class="hero__desc">
+                        Лучшие мастера кофейного искусства соберутся в одном месте, чтобы определить сильнейших и подарить гостям незабываемую атмосферу кофе, общения и профессионального мастерства.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#tickets" class="btn btn--primary">Купить билет</a>
+                        <a href="#participate" class="btn btn--outline">Стать участником</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper fade-in-right">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Бариста готовит кофе" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">О фестивале</h2>
+                    <p class="section-desc">Барифест — это не просто конкурс, это праздник кофейной культуры, объединяющий профессионалов и любителей.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass-card fade-in-up">
+                        <div class="feature-icon">☕</div>
+                        <h3>Лучшие бариста</h3>
+                        <p>Соревнуются только проверенные мастера с многолетним опытом работы в лучших кофейнях.</p>
+                    </div>
+                    <div class="feature-card glass-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Профессиональные соревнования</h3>
+                        <p>Честная борьба по международным стандартам судейства в различных дисциплинах.</p>
+                    </div>
+                    <div class="feature-card glass-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Нетворкинг</h3>
+                        <p>Уникальная возможность найти партнеров, поставщиков и единомышленников в индустрии.</p>
+                    </div>
+                    <div class="feature-card glass-card fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="feature-icon">🎁</div>
+                        <h3>Призы и подарки</h3>
+                        <p>Ценные призы от спонсоров, оборудование и сертификаты для победителей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section class="section program" id="program">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Программа мероприятия</h2>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">10:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Регистрация гостей</h3>
+                            <p>Получение бейджей, приветственный кофе-сет.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">11:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Открытие фестиваля</h3>
+                            <p>Приветственное слово организаторов и представление жюри.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">12:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Первый этап: Эспрессо</h3>
+                            <p>Техническая часть соревнований. Оценка экстракции и вкуса.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">15:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Авторские напитки</h3>
+                            <p>Креативный этап. Презентация уникальных рецептов участников.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">17:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Финал</h3>
+                            <p>Битва лучших за звание Гран-при Барифеста.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-left">
+                        <div class="timeline-time">19:00</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Награждение</h3>
+                            <p>Церемония вручения наград, фуршет и вечерняя программа.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nominations Section -->
+        <section class="section nominations" id="nominations">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Номинации</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="nomination-card glass-card fade-in-up">
+                        <h3>Лучший эспрессо</h3>
+                        <p>Классика жанра. Идеальный баланс кислотности, сладости и горечи.</p>
+                    </div>
+                    <div class="nomination-card glass-card fade-in-up">
+                        <h3>Лучший капучино</h3>
+                        <p>Идеальная текстура молока, латте-арт и гармония вкуса.</p>
+                    </div>
+                    <div class="nomination-card glass-card fade-in-up">
+                        <h3>Авторский напиток</h3>
+                        <p>Креативность, презентация и уникальный вкусовой профиль.</p>
+                    </div>
+                    <div class="nomination-card glass-card fade-in-up">
+                        <h3>Скорость приготовления</h3>
+                        <p>Мастерство без потери качества в условиях цейтнота.</p>
+                    </div>
+                    <div class="nomination-card glass-card fade-in-up">
+                        <h3>Приз зрительских симпатий</h3>
+                        <p>Выбор гостей фестиваля. Самый популярный участник.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Section -->
+        <section class="section audience">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Для кого мероприятие</h2>
+                </div>
+                <div class="audience-list">
+                    <div class="audience-item fade-in-up">👨‍💼 Владельцы кофеен</div>
+                    <div class="audience-item fade-in-up">☕ Бариста</div>
+                    <div class="audience-item fade-in-up">❤️ Любители кофе</div>
+                    <div class="audience-item fade-in-up">⚙️ Поставщики оборудования</div>
+                    <div class="audience-item fade-in-up">🔥 Обжарщики кофе</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Галерея</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1442512595331-e89e7385a861?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e7385a861?auto=format&fit=crop&w=600&q=80" alt="Кофе арт">
+                    </div>
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Зерна кофе">
+                    </div>
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Процесс приготовления">
+                    </div>
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=600&q=80" alt="Интерьер кофейни">
+                    </div>
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Латте арт">
+                    </div>
+                    <div class="gallery-item fade-in-up" data-src="https://images.unsplash.com/photo-1507133750069-bef72f3707a9?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1507133750069-bef72f3707a9?auto=format&fit=crop&w=600&q=80" alt="Оборудование">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Block -->
+        <section class="cta-section">
+            <div class="container cta-container fade-in-up">
+                <h2>Станьте частью Барифеста</h2>
+                <p>Присоединяйтесь к крупнейшему кофейному событию года и покажите своё мастерство.</p>
+                <a href="#tickets" class="btn btn--white">Купить билет</a>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section pricing" id="tickets">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Стоимость участия</h2>
+                </div>
+                <div class="pricing-grid">
+                    <!-- Guest Card -->
+                    <div class="pricing-card glass-card fade-in-up">
+                        <h3>Гость</h3>
+                        <div class="price">1 500 ₽</div>
+                        <ul class="pricing-features">
+                            <li>Посещение фестиваля</li>
+                            <li>Доступ к зоне дегустации</li>
+                            <li>Развлекательная программа</li>
+                        </ul>
+                        <a href="#" class="btn btn--outline full-width">Выбрать</a>
+                    </div>
+
+                    <!-- Participant Card (Recommended) -->
+                    <div class="pricing-card glass-card recommended fade-in-up">
+                        <div class="badge">Рекомендуем</div>
+                        <h3>Участник</h3>
+                        <div class="price">5 000 ₽</div>
+                        <ul class="pricing-features">
+                            <li>Участие в соревнованиях</li>
+                            <li>Бейдж участника</li>
+                            <li>Сертификат</li>
+                            <li>Все преимущества гостя</li>
+                        </ul>
+                        <a href="#" class="btn btn--primary full-width">Выбрать</a>
+                    </div>
+
+                    <!-- Premium Card -->
+                    <div class="pricing-card glass-card fade-in-up">
+                        <h3>Премиум</h3>
+                        <div class="price">15 000 ₽</div>
+                        <ul class="pricing-features">
+                            <li>VIP-зона</li>
+                            <li>Встреча с судьями</li>
+                            <li>Подарочный набор</li>
+                            <li>Все преимущества участника</li>
+                        </ul>
+                        <a href="#" class="btn btn--outline full-width">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Частые вопросы</h2>
+                </div>
+                <div class="accordion fade-in-up">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Как зарегистрироваться? <span class="icon">+</span></button>
+                        <div class="accordion-body">
+                            <p>Заполните форму на сайте в разделе «Стать участником» или купите билет как гость через кнопку «Купить билет».</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Кто может участвовать? <span class="icon">+</span></button>
+                        <div class="accordion-body">
+                            <p>Любой действующий бариста или владелец кофейни. Мы также приветствуем студентов кофейных школ.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Где проходит мероприятие? <span class="icon">+</span></button>
+                        <div class="accordion-body">
+                            <p>Фестиваль пройдет в Конгресс-холле Москва по адресу: ул. Кофейная, 1.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Можно ли вернуть билет? <span class="icon">+</span></button>
+                        <div class="accordion-body">
+                            <p>Да, возврат возможен не позднее чем за 7 дней до начала мероприятия. Комиссия сервиса не возвращается.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Как связаться с организаторами? <span class="icon">+</span></button>
+                        <div class="accordion-body">
+                            <p>Напишите нам на email info@barifest.ru или позвоните по телефону +7 (999) 000-00-00.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section final-cta">
+            <div class="container text-center fade-in-up">
+                <h2 class="section-title">Готовы показать своё мастерство?</h2>
+                <a href="#tickets" class="btn btn--primary btn--large">Купить билет сейчас</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a href="#" class="logo logo--footer">Бари<span>фест</span></a>
+                <p class="copyright">© 2026 Барифест. Все права защищены.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p>Email: <a href="mailto:info@barifest.ru">info@barifest.ru</a></p>
+                <p>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+            </div>
+            <div class="footer__col">
+                <h4>Социальные сети</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Telegram">TG</a>
+                    <a href="#" aria-label="VKontakte">VK</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="privacy-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">↑</button>
+
+    <!-- Modal for Gallery -->
+    <div id="galleryModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
